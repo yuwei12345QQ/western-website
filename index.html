@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="kh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Western University | Education in Cambodia</title>
+  <meta name="description" content="Western University Website Official, Bachelor Degree, Master Degree and Doctor." />
+  <link rel="icon" href="https://ext.same-assets.com/1775508698/2410119893.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#32456f',
+            secondary: '#cf3e44',
+            accent: '#70aec4',
+            lightBg: '#f8f8f8',
+          },
+          fontFamily: {
+            khmer: ['Battambang', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @font-face {
+      font-family: 'SiemReap';
+      src: url('https://ext.same-assets.com/1775508698/226972921.ttf') format('truetype');
+    }
+    body {
+      font-family: 'Battambang', 'Poppins', sans-serif;
+    }
+    .khmer-text {
+      font-family: 'Battambang', sans-serif;
+    }
+    .english-text {
+      font-family: 'Poppins', sans-serif;
+    }
+    .carousel-container {
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+    .carousel-container::-webkit-scrollbar {
+      display: none;
+    }
+    .gradient-overlay {
+      background: linear-gradient(135deg, rgba(50, 69, 111, 0.1) 0%, rgba(50, 69, 111, 0.05) 100%);
+    }
+    .service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    .nav-link {
+      position: relative;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #cf3e44;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    .news-card {
+      transition: all 0.3s ease;
+    }
+    .news-card:hover {
+      transform: scale(1.02);
+    }
+    .feature-icon {
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover .feature-icon {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="bg-white">
+  <!-- Top Bar -->
+  <div class="bg-white border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex justify-end items-center gap-6 text-sm">
+      <a href="#" class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+        </svg>
+        <span class="khmer-text">ការប្រឡងអាហារូបករណ៍</span>
+      </a>
+      <a href="#" class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
+        </svg>
+        <span class="english-text">WU Login</span>
+      </a>
+      <a href="#" class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+        <span class="english-text">Web Mail</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#" class="flex-shrink-0">
+          <img src="western.png" alt="Western University Logo" class="h-14">
+        </a>
+        
+        <!-- Navigation Links -->
+        <div class="hidden lg:flex items-center gap-6">
+          <div class="relative group">
+            <a href="#" class="nav-link text-primary font-medium khmer-text flex items-center gap-1 py-2">
+              អំពី ស.វស្សិន
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="relative group">
+            <a href="#" class="nav-link text-primary font-medium khmer-text flex items-center gap-1 py-2">
+              មហាវិទ្យាល័យ
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="relative group">
+            <a href="#" class="nav-link text-primary font-medium khmer-text flex items-center gap-1 py-2">
+              ផ្នាក់ក្រោយឧត្តម
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="relative group">
+            <a href="#" class="nav-link text-primary font-medium khmer-text flex items-center gap-1 py-2">
+              ការដាក់ពាក្យ
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+          </div>
+          <a href="#" class="nav-link text-primary font-medium khmer-text py-2">សកម្មភាព</a>
+          <div class="relative group">
+            <a href="#" class="nav-link text-primary font-medium khmer-text flex items-center gap-1 py-2">
+              កិច្ចការនិស្សិត
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="relative group">
+            <a href="#" class="nav-link text-primary font-medium khmer-text flex items-center gap-1 py-2">
+              ការចូលរៀន
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Language Switcher -->
+        <div class="flex items-center gap-3">
+          <a href="#" class="flex items-center gap-1 text-primary font-medium">
+            <img src="https://ext.same-assets.com/1775508698/3841752580.svg" alt="KH" class="w-6 h-4 object-cover rounded">
+            <span class="khmer-text">ភាសាខ្មែរ</span>
+          </a>
+          <span class="text-gray-300">|</span>
+          <a href="#" class="flex items-center gap-1 text-gray-500 hover:text-primary transition-colors">
+            <img src="https://ext.same-assets.com/1775508698/2547580294.svg" alt="EN" class="w-6 h-4 object-cover rounded">
+            <span class="english-text">English</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="lg:hidden p-2" id="mobileMenuBtn">
+          <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative">
+    <div class="relative h-[500px] lg:h-[600px] overflow-hidden">
+      <img src="https://ext.same-assets.com/1775508698/1285322729.jpeg" alt="Cambodia Flag" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
+      
+      Hero Content
+      <!-- <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-center px-4 max-w-4xl">
+          <p class="text-white text-xl lg:text-2xl khmer-text mb-2">មោទនភាពខ្មែរ ស្វាគមន៍ជាតិខ្មែរតែមួយ</p>
+          <p class="text-secondary text-xl lg:text-2xl khmer-text font-bold mb-4">ពួកយើងនៅជាមួយវីរភាពនៃការពារទឹកដីមាតុភូមិ !</p>
+          
+          <div class="mt-4 space-y-1">
+            <p class="text-white text-lg lg:text-xl english-text font-semibold tracking-wide">IN PRIDE AND SOLIDARITY.</p>
+            <p class="text-white text-lg lg:text-xl english-text font-bold tracking-wide">WE STAND WITH <span class="text-secondary">OUR DEFENDERS.</span></p>
+          </div> -->
+          
+          <!-- One Nation Badge -->
+          <div class="mt-8 flex items-center justify-center gap-4">
+            <img src="https://ext.same-assets.com/1775508698/348085991.webp" alt="WU Logo" class="h-12">
+            <div class="text-left">
+              <p class="text-white text-sm khmer-text">សាកលវិទ្យាល័យ វេស្ទើន</p>
+              <p class="text-white text-xs english-text">WESTERN UNIVERSITY</p>
+            </div>
+            <div class="h-10 w-px bg-white/50"></div>
+            <div>
+              <p class="text-secondary text-2xl english-text font-bold tracking-wider">ONE NATION</p>
+              <p class="text-white/80 text-xs english-text italic">ONE VOICE, ONE HEART</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Features Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Feature 1 -->
+        <div class="feature-card text-center p-6 rounded-2xl hover:bg-blue-50 transition-colors">
+          <div class="feature-icon w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-3 khmer-text">សញ្ញាបត្រង</h3>
+          <p class="text-gray-600 text-sm khmer-text">កម្មវិធីយោជនភាពដែលផុត ដែលផ្តោតលើជំនាញក្រៅប្រិទ សម្រាប់កាដំរង និងការរៀន សុគ្រោះអន្កទៀត ។</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card text-center p-6 rounded-2xl hover:bg-red-50 transition-colors">
+          <div class="feature-icon w-20 h-20 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-10 h-10 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-3 khmer-text">សញ្ញាបត្រ បញ្ជាបត្រ</h3>
+          <p class="text-gray-600 text-sm khmer-text">កម្មវិធីជំនាក់បញ្ជាបគ្រូជំដល កសាងមូលដ្ឋានសំភ្នូ និង ការអន្កទៀតដែរម៉ា ។</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card text-center p-6 rounded-2xl hover:bg-amber-50 transition-colors">
+          <div class="feature-icon w-20 h-20 bg-amber-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-10 h-10 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-3 khmer-text">សញ្ញាបត្រអនុបណ្ឌិត</h3>
+          <p class="text-gray-600 text-sm khmer-text">កម្មវិធីបណ្តុះបណ្តាលកម្រិត ខ្ពស់សម្រាប់ការជាអ្នក ដែកន្ទុ និងឧត្តមភាពកាពីដ្រូ ដរ៏: ។</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card text-center p-6 rounded-2xl hover:bg-green-50 transition-colors">
+          <div class="feature-icon w-20 h-20 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-3 khmer-text">សញ្ញាបត្របណ្ឌិត</h3>
+          <p class="text-gray-600 text-sm khmer-text">កម្មវិធីផ្តោតលើកាស្រាវប្រាវ ដើម្បីកែលម្អមដានទូន្មូន់ ចំណេះដឹង និងដំនាញ ។</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section class="py-16 bg-lightBg">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-3xl font-bold text-primary khmer-text">
+          ព័ត៌មាន <span class="text-secondary">ថ្មី</span>
+        </h2>
+        <div class="flex gap-2">
+          <button class="carousel-prev-news w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <button class="carousel-next-news w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- News Carousel -->
+      <div class="carousel-container flex gap-6 overflow-x-auto pb-4" id="newsCarousel">
+        <!-- News Card 1 -->
+        <div class="flex-shrink-0 w-80 bg-white rounded-xl shadow-lg overflow-hidden news-card">
+          <div class="relative">
+            <img src="https://ext.same-assets.com/1775508698/2522005253.jpeg" alt="News" class="w-full h-48 object-cover">
+            <span class="absolute top-3 left-3 bg-primary text-white text-xs px-3 py-1 rounded-full english-text">News</span>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-primary mb-2 line-clamp-2 khmer-text">ផ្កាក់ដំណេិរការគល់វិន្ទុល័យវេស្សើន</h3>
+            <p class="text-gray-600 text-sm mb-3 line-clamp-2 khmer-text">ចូលមួយសិក្ខាបណ្តុះបណ្តាលស្តីពី</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2 text-gray-500 text-sm">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="english-text">16 Mar 2026</span>
+              </div>
+              <a href="#" class="text-secondary font-medium flex items-center gap-1 khmer-text text-sm hover:underline">
+                ពិនិត្យ
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- News Card 2 -->
+        <div class="flex-shrink-0 w-80 bg-white rounded-xl shadow-lg overflow-hidden news-card">
+          <div class="relative">
+            <img src="https://ext.same-assets.com/1775508698/4117587103.jpeg" alt="News" class="w-full h-48 object-cover">
+            <span class="absolute top-3 left-3 bg-primary text-white text-xs px-3 py-1 rounded-full english-text">News</span>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-primary mb-2 line-clamp-2 khmer-text">ថ្ងៃប្រហសុធី ១នែវ ខែធ្នូន ឆ្នាំ២០២៦</h3>
+            <p class="text-gray-600 text-sm mb-3 line-clamp-2 khmer-text">សម្បូរ ព.ស រ៥៦៥ គ្រិនិងម្ចែ ១២ ខែមីនា ឆ្នា ២០២៦</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2 text-gray-500 text-sm">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="english-text">13 Mar 2026</span>
+              </div>
+              <a href="#" class="text-secondary font-medium flex items-center gap-1 khmer-text text-sm hover:underline">
+                ពិនិត្យ
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- News Card 3 -->
+        <div class="flex-shrink-0 w-80 bg-white rounded-xl shadow-lg overflow-hidden news-card">
+          <div class="relative">
+            <img src="https://ext.same-assets.com/1775508698/3604521856.jpeg" alt="News" class="w-full h-48 object-cover">
+            <span class="absolute top-3 left-3 bg-primary text-white text-xs px-3 py-1 rounded-full english-text">News</span>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-primary mb-2 line-clamp-2 khmer-text">និស្សិតមហាវិន្ទុល័យវិទ្យាសាស្រ្ត និង...</h3>
+            <p class="text-gray-600 text-sm mb-3 line-clamp-2 khmer-text">សាកលវិន្ទុល័យវេស្សើន កាលពីថ្ងៃទី២៨ ខែភាគ រាល់តែបានចាប់ផ្រកបកិច្ច</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2 text-gray-500 text-sm">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="english-text">09 Mar 2026</span>
+              </div>
+              <a href="#" class="text-secondary font-medium flex items-center gap-1 khmer-text text-sm hover:underline">
+                ពិនិត្យ
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- News Card 4 -->
+        <div class="flex-shrink-0 w-80 bg-white rounded-xl shadow-lg overflow-hidden news-card">
+          <div class="relative">
+            <img src="https://ext.same-assets.com/1775508698/568363724.jpeg" alt="News" class="w-full h-48 object-cover">
+            <span class="absolute top-3 left-3 bg-primary text-white text-xs px-3 py-1 rounded-full english-text">News</span>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-primary mb-2 line-clamp-2 khmer-text">សកម្មភាពថ្មីរបស់សាកលវិន្ទុល័យ</h3>
+            <p class="text-gray-600 text-sm mb-3 line-clamp-2 khmer-text">សកម្មភាពសិក្សា និងព្រឹត្តិការណ៍ថ្មីៗ</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2 text-gray-500 text-sm">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="english-text">05 Feb 2026</span>
+              </div>
+              <a href="#" class="text-secondary font-medium flex items-center gap-1 khmer-text text-sm hover:underline">
+                ពិនិត្យ
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-b from-blue-50 to-white pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <!-- Logo & Info -->
+        <div class="lg:col-span-1">
+          <a href="#" class="inline-block mb-4">
+            <img src="https://ext.same-assets.com/1775508698/2709691557.webp" alt="Western University Logo" class="h-20">
+          </a>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-bold text-primary mb-4 khmer-text">អំពី</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-600 hover:text-primary transition-colors khmer-text">ប្រវត្តិសាកលវិន្ទុល័យ វេស្សើន</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-primary transition-colors khmer-text">ចក្ខុវិស័យ បេសកកម្ម និងគោលដៅ</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-primary transition-colors khmer-text">រចនាសម្ព័ន្ធអង្គការ</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-primary transition-colors khmer-text">ការទទួលស្គាល់</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-primary transition-colors khmer-text">សារស្វាគមន៍</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-primary transition-colors khmer-text">ទំនាក់ទំនង និងទីតាំង</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="text-lg font-bold text-primary mb-4 khmer-text">ទំនាក់ទំនង</h4>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <span class="text-gray-600 khmer-text">ទូរស័ព្ទ: <span class="english-text">+855 96 8000 111</span></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <span class="text-gray-600 english-text">info_wu@westernuniversity.edu.kh</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span class="text-gray-600 khmer-text">អាសយដ្ឋាន: លេខ 145, ផ្លូវ 608 ផ្ទះ់១ 313, សង្កាត់បឹងកក់ 2, ខណ្ឌទូលគោក, រាជធានីភ្នំពេញ, កម្ពុជា</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Map -->
+        <div>
+          <div class="rounded-xl overflow-hidden shadow-lg">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.717614988892!2d104.8962989!3d11.5566883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951e96d257a6f%3A0x6b66703c5fc0c7cc!2sWestern%20University!5e0!3m2!1sen!2skh!4v1234567890" 
+              width="100%" 
+              height="200" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              class="rounded-xl"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-gray-200 pt-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+          <p class="text-gray-500 text-sm khmer-text">
+            © 2026 សាកលវិន្ទុល័យ វេស្សើន ។ រក្សាសិទ្ធគ្រប់យ៉ាង ។
+          </p>
+          <div class="flex items-center gap-2">
+            <span class="text-gray-500 text-sm khmer-text">គ្រប់គ្រងដោយ</span>
+            <a href="#" class="bg-primary text-white px-4 py-1.5 rounded-full text-sm english-text font-medium hover:bg-primary/90 transition-colors">Teamyearng</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
